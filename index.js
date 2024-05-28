@@ -1,4 +1,4 @@
-var random = Math.floor(Math.random()*12 + 1) 
+var random = Math.floor(Math.random()*12 +1) 
 document.querySelector('.post').innerHTML = random
 document.querySelector('.followers').innerHTML = Math.floor(Math.random()*1200 + 1)
 document.querySelector('.following').innerHTML = Math.floor(Math.random()*2000 + 1)
@@ -12,7 +12,7 @@ fetch('https://randomuser.me/api').then(response=>{
         for(var i=0; i<random;i++)
         {
             var imgg = document.createElement('img')
-            imgg.src = 'https://picsum.photos/152' + i
+            imgg.src = 'https://picsum.photos/150' + i 
             document.querySelector('.posts').append(imgg)
         }
     })
